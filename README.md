@@ -7,7 +7,7 @@ coding quiz
 
 ## Snapshot
  
-[](./quiz.png)
+![](./quiz.png)
 
 
 check local storage for highscore roster
