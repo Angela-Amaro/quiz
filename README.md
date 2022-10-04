@@ -10,7 +10,7 @@ coding quiz
 [](./quiz.png)
 
 
-
+check local storage for highscore roster
 
 ## process 
 
