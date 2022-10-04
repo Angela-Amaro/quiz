@@ -12,48 +12,54 @@
 <body>
     <!--displays timer and time left at the top left of the screen-->
     <h1 class="time">Time left</h1>
-    <div id="question#1">
-        <p>what does CSS stand for?</p>
-        <p class="answer">Cascading Style Sheets</p>
-        <p class="wronganswer">Character styling sheets</p>
-        <p class="wronganswer">colorful styling sheets</p>
-        <p class="wronganswer">coding style sheets</p>
+    <div id="qs">
+        <div class="hidden" id="question1">
+            <p>what does CSS stand for?</p>
+            <input name="q1anwer" data-correct="answer" type="radio">Cascading Style Sheets
+            <input name="q1anwer" data-correct="wronganswer" type="radio">Character styling sheets</p>
+            <input name="q1anwer" data-correct="wronganswer" type="radio">colorful styling sheets</p>
+            <input name="q1anwer" data-correct="wronganswer" type="radio">coding style sheets</p>
+        </div>
+
+        <div class="hidden" id="question2">
+            <p>When making a for loop what file do I make it in?</p>
+            <input name="q2anwer" data-correct="answer" type="radio">Javascript</p>
+            <input name="q2anwer" data-correct="wronganswer" type="radio">CSS</p>
+            <input name="q2anwer" data-correct="wronganswer" type="radio">HTML</p>
+            <input name="q2anwer" data-correct="wronganswer" type="radio">README.md</p>
+        </div>
+
+        <div class="hidden" id="question3">
+            <p>What do you use when you navigate your computer's files?</p>
+            <input name="q3anwer" data-correct="answer" type="radio">terminal</p>
+            <input name="q3anwer" data-correct="wronganswer" type="radio">file explorer</p>
+            <input name="q3anwer" data-correct="wronganswer" type="radio">GitHub</p>
+            <input name="q3anwer" data-correct="wronganswer" type="radio">repository</p>
+        </div>
+
+        <div class="hidden" id="question4">
+            <p>what file should always be included when creating a new repository?</p>
+            <input name="q4anwer" data-correct="answer" type="radio">README.md</p>
+            <input name="q4anwer" data-correct="wronganswer" type="radio">style.css</p>
+            <input name="q4anwer" data-correct="wronganswer" type="radio">script.js</p>
+            <input name="q4anwer" data-correct="wronganswer" type="radio">index.html</p>
+        </div>
+
+        <div class="hidden" id="question5">
+            <p>what file is standard for making a website available on the internet?</p>
+            <input name="q5anwer" data-correct="answer" type="radio">index.html</p>
+            <input name="q5anwer" data-correct="wronganswer" type="radio">README.md</p>
+            <input name="q5anwer" data-correct="wronganswer" type="radio">Javascript</p>
+            <input name="q5anwer" data-correct="wronganswer" type="radio">CSS</p>
+        </div>
     </div>
 
-    <div id="question#2">
-        <p>When making a for loop what file do I make it in?</p>
-        <p class="answer">Javascript</p>
-        <p class="wronganswer">CSS</p>
-        <p class="wronganswer">HTML</p>
-        <p class="wronganswer">README</p>
+    <div class="hidden" id="end">
+        <p>Your score was <span id="totalscore"></span></p>
+        <input id="init" input="initials">
+        <button id="score">submit</button>
     </div>
 
-    <div id="question#3">
-        <p>What do you use when you navigate your computer's files?</p>
-        <p class="answer">terminal</p>
-        <p class="wronganswer">file explorer</p>
-        <p class="wronganswer">GitHub</p>
-        <p class="wronganswer">repository</p>
-    </div>
-
-    <div id="question#4">
-        <p>what file should always be included when creating a new repository?</p>
-        <p class="answer">README.md</p>
-        <p class="wronganswer">style.css</p>
-        <p class="wronganswer">script.js</p>
-        <p class="wronganswer">index.html</p>
-    </div>
-
-    <div id="question#5">
-        <p>what file is standard for making a website available on the internet?</p>
-        <p class="answer">index.html</p>
-        <p class="wronganswer">README.md</p>
-        <p class="wronganswer">Javascript</p>
-        <p class="wronganswer">CSS</p>
-    </div>
-    <!--box input for initials-->
-    <input input="initials">
-    <!--box to show score + initials -->
     <!--start button is at the bottom of the page-->
     <button class="start">START</button>
 
